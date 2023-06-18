@@ -11,3 +11,8 @@ def add(request):
     todo_item = todo(content=tododata)
     todo_item.save()
     return redirect(home)
+
+def deleteItem(request, todo_id):
+    item = todo.objects.get(id=todo_id)
+    item.delete()
+    return redirect(home)
