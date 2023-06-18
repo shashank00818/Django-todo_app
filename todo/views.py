@@ -2,6 +2,8 @@ from django.shortcuts import render,redirect
 from .models import todo
 
 # Create your views here.
+
+#home view
 def home(request):
     data = todo.objects.all()
     return render(request, 'home.html', {'data': data})
