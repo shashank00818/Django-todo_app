@@ -1,1 +1,1 @@
-# Django-todo_app
+# This is my First Django Project
